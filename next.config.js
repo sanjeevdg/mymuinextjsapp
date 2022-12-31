@@ -1,6 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+images: {
+    loader: 'akamai',
+    path: '',
+  },
+exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      '/': { page: '/' },
+      '/about': { page: '/about' },
+      '/p/signinpage': { page: '/signinpage' },
+    }
+  },
+  reactStrictMode: false,
 }
 
 module.exports = nextConfig
