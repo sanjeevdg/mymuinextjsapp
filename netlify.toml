@@ -1,5 +1,4 @@
-
-"scripts": {
-   "export": "next export"
-}
+[build]
+   command = "npm run build"
+   publish = "out"
 
