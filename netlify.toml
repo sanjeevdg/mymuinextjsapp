@@ -1,3 +1,5 @@
+{
 "scripts": {
    "export": "next export"
-},
+}
+}
